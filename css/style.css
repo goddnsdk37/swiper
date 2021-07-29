@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ol,
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #fff;
+  overflow: hidden; }
+  #wrap .bg li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: 1s; }
+    #wrap .bg li.on {
+      opacity: 1; }
+    #wrap .bg li:nth-of-type(1) {
+      background-image: url("../img/bg01.jpg"); }
+    #wrap .bg li:nth-of-type(2) {
+      background-image: url("../img/bg02.jpg"); }
+    #wrap .bg li:nth-of-type(3) {
+      background-image: url("../img/bg03.jpg"); }
+    #wrap .bg li:nth-of-type(4) {
+      background-image: url("../img/bg04.jpg"); }
+  #wrap h2 {
+    position: absolute;
+    top: 84px;
+    left: 140px;
+    font: bold 40px/1 "arial";
+    color: #fff; }
+  #wrap .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    #wrap .swiper-wrapper .swiper-slide {
+      width: 50vw;
+      height: 60vh;
+      position: relative;
+      top: 26vh; }
+      #wrap .swiper-wrapper .swiper-slide .inner {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        padding: 60px;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        opacity: 0.5;
+        transition: opacity 1s;
+        font: bold 50px/1 "lato";
+        color: #eee; }
+      #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
+        opacity: 1; }
+  #wrap .swiper-button-next {
+    top: auto;
+    bottom: 5vh;
+    right: 10vw;
+    transform: scale(0.5);
+    color: #fff;
+    opacity: 0.7; }
+  #wrap .swiper-button-prev {
+    top: auto;
+    bottom: 5vh;
+    left: auto;
+    right: calc(10vw + 50px);
+    transform: scale(0.5);
+    color: #fff;
+    opacity: 0.7; }
+  #wrap .swiper-pagination {
+    position: absolute;
+    left: auto;
+    right: 10vw;
+    width: auto;
+    height: 50px;
+    top: 10vh; }
+    #wrap .swiper-pagination span {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: 0px;
+      margin-left: 60px;
+      opacity: 0.7;
+      color: #fff; }
+      #wrap .swiper-pagination span.swiper-pagination-bullet-active {
+        opacity: 1;
+        font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
