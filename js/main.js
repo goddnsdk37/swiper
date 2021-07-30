@@ -1,10 +1,10 @@
-const menu = ["Company","About","Information","News"];
+const menu = ["SYNOPSIS","CHARACTER","TRAILER","GALLERY"];
 
 const swiper = new Swiper("#wrap", {
     loop:true, //무한 반복
     slidesPerView: "auto", //동시에 보여줄 슬라이드 갯수
     centeredSlides: true, //true시 슬라이드가 가운데로 배치
-    spaceBetween: 50, //슬라이드간 간격
+    spaceBetween: 100, //슬라이드간 간격
     mousewheel:true,
 
     navigation:{
